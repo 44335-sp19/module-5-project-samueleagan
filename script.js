@@ -32,38 +32,33 @@ var javascript = [{question: "TRUE OR FALSE: JavaScript and Java are the same la
 var score = 0;
 
 $(document).ready(function() {
-    var counter = 0
-    while (counter >= 12 || score <= 1200) {
+
     $("#python1").click(function() {if (showQuestion(python, python[0].question, 0) == 1){
-                                        score += 100;
-                                    }});
+                                        score += 100; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"};
+                                    });
     $("#python2").click(function() {if (showQuestion(python, python[1].question, 1) == 1){
-                                        score += 200;
+                                        score += 200; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                     }});
     $("#python3").click(function() {if (showQuestion(python, python[2].question, 2) == 1){
-                                        score += 300;
+                                        score += 300; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                     }});
     $("#java1").click(function() {if (showQuestion(java, java[0].question, 0) == 1){
-                                        score += 100;
+                                        score += 100; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                     }});
     $("#java2").click(function() {if (showQuestion(java, java[1].question, 1) == 1){
-                                        score += 200;
+                                        score += 200; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                     }});
     $("#java3").click(function() {if (showQuestion(java, java[2].question, 2) == 1){
-                                        score += 300;
+                                        score += 300; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                     }});
     $("#js1").click(function() {if (showQuestion(javascript, javascript[0].question, 0) == 1) {
-                                    score += 100;
+                                    score += 100; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                 }});
     $("#js2").click(function() {if (showQuestion(javascript, javascript[1].question, 1) == 1) {
-                                    score += 200;
+                                    score += 200; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                 }});
     $("#js3").click(function() {if (showQuestion(javascript, javascript[2].question, 2) == 1) {
-                                    score += 300;
+                                    score += 300; document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>"
                                 }});
-
-    //document.getElementById("score").innerHTML = "<h1> Score: " + score + "</h1>";
-    counter++;
-    }
 
 });
