@@ -5,46 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Module 5 Project</title>
     <link rel="style">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
   </head>
   <body>
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-      
+      <script src ="script.js"></script>
+
       <div class="jumbotron text-center">
         <h1>Script Programming Jeopordy</h1>
         <h4>Including Python, Java and JavaScript</h4>
       </div>
       
       <div class="container">
-        <div class="row btn-group-vertical text-center">
-            <div class="col-sm-4">
-                <h3 class = "colHead">Python</h3>
-                <button class = "answer btn">$100</button>
-                <button class = "answer btn">$200</button>
-                <button class = "answer btn">$300</button>
+          <div class = "wrapper text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 class = "colHead">Python</h3>
+                    <button class="btn btn-danger btn-block" id="python1">$100</button>
+                    <button class="btn btn-warning btn-block" id="python2">$200</button>
+                    <button class="btn btn-primary btn-block" id="python3">$300</button>
                 </div>
-        </div>
-        <div class="row btn-group-vertical">
-            <div class="col-sm-4">
-                <h3 class = "colHead">Java</h3>
-                <button class = "answer btn">$100</button>
-                <button class = "answer btn">$200</button>
-                <button class = "answer btn">$300</button>
+                <div class="col-sm-4">
+                    <h3 class = "colHead">Java</h3>
+                    <button class="btn btn-danger btn-block" id="java1">$100</button>
+                    <button class="btn btn-warning btn-block" id="java2">$200</button>
+                    <button class="btn btn-primary btn-block" id="java3">$300</button>
                 </div>
-        </div>
-        <div class="row btn-group-vertical">
-            <div class="col-sm-4">
-                <h3 class = "colHead">JavaScript</h3>
-                <button class = "answer btn">$100</button>
-                <button class = "answer btn">$200</button>
-                <button class = "answer btn">$300</button>
+                <div class="col-sm-4">
+                    <h3 class = "colHead">JavaScript</h3>
+                    <button class="btn btn-danger btn-block" id="js1">$100</button>
+                    <button class="btn btn-warning btn-block" id="js2">$200</button>
+                    <button class="btn btn-primary btn-block" id="js3">$300</button>
                 </div>
+            </div>
         </div>
       </div>
-                
-        
-	
+      <div class="text-center">
+          <div id=score></div>
+      </div>
   </body>
 </html>
